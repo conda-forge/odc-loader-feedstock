@@ -1,5 +1,5 @@
 {% set name = "odc-loader" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/odc_loader-{{ version }}.tar.gz
-  sha256: 227432e987587d4f849afe668f9cae0c746087782e45ed91c877b51ae0a710bb
+  sha256: bf3adf53b10248bbab3bb1fcb043995c12e204dbde4f9a751cd3331b1c6a1212
 
 build:
   noarch: python
