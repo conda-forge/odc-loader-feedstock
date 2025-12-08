@@ -1,5 +1,5 @@
 {% set name = "odc-loader" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/odc_loader-{{ version }}.tar.gz
-  sha256: bf3adf53b10248bbab3bb1fcb043995c12e204dbde4f9a751cd3331b1c6a1212
+  sha256: 6c1b5dac2a00ba4292be57038c2665e78069dab4726f9b884fe5a608f8779263
 
 build:
   noarch: python
@@ -29,8 +29,9 @@ requirements:
     - numpy >=1.20.0
     - pandas
     - toolz
+    - typing-extensions >=4.2.0
     - xarray >=0.19
-    - zarr >=2.18.3,<3
+    - zarr >=2.18.3,<4
 
 test:
   imports:
